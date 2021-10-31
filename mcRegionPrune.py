@@ -2,7 +2,7 @@ import sys, os, argparse
 
 
 def pruneWorld(path, keepRadius):
-    chunkRadius = int(keepRadius / 16)
+    chunkRadius = int(keepRadius / 512)
     chunkRadius += 1; #Conservative
 
     regionFileList = os.listdir(path)
